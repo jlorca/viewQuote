@@ -19,6 +19,7 @@
       const urlParams = new URLSearchParams(window.location.search);
       if(urlParams.has('quoteId')) {
         const quoteId = urlParams.get('quoteId');
+        console.log("jll quoteId = ", quoteId);
         const componentAttributes = {
           "quoteId" : quoteId
         };
