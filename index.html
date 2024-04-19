@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>SYN QUOTE</title>
+    <script src="https://synhf--jesus3.sandbox.my.site.com/lightning/lightning.out.js"></script>
+  </head>
+
+  <body>
+    <h1>INITIATED!</h1>
+    <div id="container"></div>
+    <script>
+      const appName = "c:previewExternalQuote";
+      const componentName = "c:previewExternalQuote";
+      const lightningEndpoint = "https://synhf--jesus3.sandbox.my.site.com";
+      const targetElement = document.querySelector("#container");
+      const componentAttributes = {};
+
+      $Lightning.use(appName, function () {
+        $Lightning.createComponent(
+          componentName,
+          componentAttributes,
+          targetElement,
+          function (cmp) {
+            console.log("jll lwc has been initiated!");
+          },
+          lightningEndpoint
+        );
+      });
+    </script>
+  </body>
+</html>
